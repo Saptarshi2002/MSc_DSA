@@ -410,9 +410,11 @@ int main() {
                 }
                 insert_sequence(insert_keys, n);
                 free(insert_keys);
+                
                 break;
+
             case 3:
-                printf("Enter key to delete: ");
+                printf("Enter the key to delete: ");
                 scanf("%d", &key);
                 delete(key);
                 break;
