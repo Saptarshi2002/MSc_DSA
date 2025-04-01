@@ -58,13 +58,13 @@ int substract(Polynomial A[],int degA, Polynomial B[],int degB, Polynomial C[]){
 
 
 int multliply(Polynomial A[], int degA, Polynomial B[], int degB, Polynomial C[]) {
-    int k = 0;
-    for (int i = 0; i < degA; i++) {
-        for (int j = 0; j < degB; j++) {
+    int k = 0,i,j,m;
+    for (i = 0; i < degA; i++) {
+        for (j = 0; j < degB; j++) {
             int power = A[i].power + B[j].power;
             int coeff = A[i].coeff * B[j].coeff;
             int found = 0;
-            for (int m = 0; m < k; m++) {
+            for (m = 0; m < k; m++) {
                 if (C[m].power == power) {
                     C[m].coeff += coeff;
                     found = 1;
@@ -82,8 +82,8 @@ int multliply(Polynomial A[], int degA, Polynomial B[], int degB, Polynomial C[]
 
 
 int differentiate(Polynomial A[], int degA, Polynomial C[]) {
-    int k = 0;
-    for (int i = 0; i < degA; i++) {
+    int k = 0,i;
+    for (i = 0; i < degA; i++) {
         if (A[i].power > 0) {
             C[k].coeff = A[i].coeff * A[i].power;
             C[k++].power = A[i].power - 1;
@@ -94,7 +94,8 @@ int differentiate(Polynomial A[], int degA, Polynomial C[]) {
 
 
 void display(Polynomial A[], int degree) {
-    for (int i = 0; i < degree; i++) {
+    int i;
+    for (i = 0; i < degree; i++) {
         if (A[i].coeff != 0) {
             if (i > 0 && A[i].coeff > 0) {
                 printf(" + ");
@@ -111,13 +112,13 @@ void display(Polynomial A[], int degree) {
 
 int main() {
     Polynomial A[MAX], B[MAX], C[MAX];
-    int degA, degB, degC;
+    int degA, degB, degC,i;
     
     // Input first polynomial
     printf("Enter the number of terms in polynomial A: ");
     scanf("%d", &degA);
     printf("Enter the coefficients and powers: ");
-    for (int i = 0; i < degA; i++) {
+    for (i = 0; i < degA; i++) {
         scanf("%d %d", &A[i].coeff, &A[i].power);
     }
     
@@ -125,7 +126,7 @@ int main() {
     printf("Enter the number of terms in polynomial B: ");
     scanf("%d", &degB);
     printf("Enter the coefficients and powers: ");
-    for (int i = 0; i < degB; i++) {
+    for (i = 0; i < degB; i++) {
         scanf("%d %d", &B[i].coeff, &B[i].power);
     }
     
