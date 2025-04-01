@@ -112,7 +112,8 @@ Polynomial* subtractPolynomials(Polynomial* A, Polynomial* B) {
 // Function to multiply two polynomials
 Polynomial* multiplyPolynomials(Polynomial* A, Polynomial* B) {
     Polynomial* result = NULL;
-    Polynomial* a,*b;
+    Polynomial* a;
+    Polynomial* b;
     for (a = A; a; a = a->next) {
         for (b = B; b; b = b->next) {
             insertTerm(&result, a->coeff * b->coeff, a->power + b->power);
