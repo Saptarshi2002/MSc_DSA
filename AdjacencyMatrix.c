@@ -7,11 +7,11 @@ void main(){
     printf("Enter the number of edges: ");
     scanf("%d", &edges);
 
-    int incidenceMatrix[vertices][vertices];
+    int adjacencyMatrix[vertices][vertices];
 
     for(i=0;i<vertices;i++)
         for ( j = 0; j < vertices; j++)
-            incidenceMatrix[i][j]=0;        
+            adjacencyMatrix[i][j]=0;        
 
     printf("Enter the edges\n");
     for ( i = 0; i < edges; i++)
@@ -19,8 +19,8 @@ void main(){
         scanf("%d%d",&u,&v);
         u--;
         v--;
-        incidenceMatrix[u][v]=1;
-        incidenceMatrix[v][u]=1;
+        adjacencyMatrix[u][v]=1;
+        adjacencyMatrix[v][u]=1;
     }
 
 
@@ -28,7 +28,7 @@ void main(){
     {
         for ( j = 0; j < vertices; j++)
         {
-            printf("%d",incidenceMatrix[i][j]);
+            printf("%d",adjacencyMatrix[i][j]);
         }
         printf("\n");
         
