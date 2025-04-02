@@ -52,8 +52,8 @@ void randomizedQuickSort(int A[], int low, int high)
     if (low < high)
     {
         int partitionIndex = randomizedPartition(A, low, high);
-        randomizedQuickSort(A, low, partitionIndex - 1);  
-        randomizedQuickSort(A, partitionIndex + 1, high); 
+        randomizedQuickSort(A, low, partitionIndex - 1);  // Sort left subarray 
+        randomizedQuickSort(A, partitionIndex + 1, high); // Sort right subarray
     }
 }
 
@@ -62,7 +62,7 @@ int main()
     int A[] = {9, 4, 4, 8, 7, 5, 6};
     int n = 7;
 
-    srand(time(0)); // Seed the random number generator for different runs wrt time
+    srand(time(0)); // Seed the random number generator for different runs
 
     printArray(A, n);
     randomizedQuickSort(A, 0, n - 1);
