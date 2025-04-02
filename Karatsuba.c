@@ -17,6 +17,7 @@ long long karatsuba(long long x, long long y) {
     int n = max((int)log10(x) + 1, (int)log10(y) + 1);
     int m = n / 2;
 
+    //Set high and low values
     long long high1 = x / (long long)pow(10, m);
     long long low1 = x % (long long)pow(10, m);
     long long high2 = y / (long long)pow(10, m);
