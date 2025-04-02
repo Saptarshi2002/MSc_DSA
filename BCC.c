@@ -107,6 +107,8 @@ void BCC(Graph* graph) {
 
 int main() {
     Graph* g = createGraph(12);
+
+    //User input to be implemeted
     addEdge(g, 0, 1);
     addEdge(g, 1, 2);
     addEdge(g, 1, 3);
