@@ -19,7 +19,7 @@ void shellSort(int arr[], int n, int gap) {
             printf("%d ", arr[i]);
         }
         printf("\n");
-        gap -= 2;  // Reduce the gap by 2 each time
+        gap -= 2; 
     }
 }
 
