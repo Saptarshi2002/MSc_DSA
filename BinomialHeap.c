@@ -272,7 +272,6 @@ int main() {
     printf("Heap after Extract-Min:\n");
     printBinomialHeap(heap);
     
-    // Free memory (in a real application, you'd want to properly free all nodes)
     
     return 0;
 }
