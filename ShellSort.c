@@ -21,6 +21,8 @@ void shellSort(int arr[], int n, int gap) {
             printf("%d ", arr[i]);
         }
         printf("\n");
+
+        //Reduce gap by 2
         gap -= 2; 
     }
 }
