@@ -95,7 +95,7 @@ int main() {
         int u, v;
         scanf("%d %d", &u, &v);
         graph[u][v] = 1;
-        graph[v][u] = 1; 
+        graph[v][u] = 1; // Undirected graph
     }
     
     int start, end;
