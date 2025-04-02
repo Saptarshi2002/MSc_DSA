@@ -46,6 +46,7 @@ int main(void){
 		ai[i] = ti[i] + ci[i] - ci[i-1];
 	}
 	
+    //Print
 	printf("\n\n\nThe Amortized Cost Calculation Table is:\n");
 	printf("=================================\n");
 	printf("Steps\tNumber\tti\tci\tai\n");
