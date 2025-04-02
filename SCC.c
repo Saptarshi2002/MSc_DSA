@@ -88,7 +88,7 @@ int main() {
     
     findSCC(graph);
     
-    // Free allocated memory
+
     for (int i = 0; i <= V; i++) {
         free(graph->adj[i]);
     }
