@@ -52,8 +52,8 @@ void randomizedQuickSort(int A[], int low, int high)
     if (low < high)
     {
         int partitionIndex = randomizedPartition(A, low, high);
-        randomizedQuickSort(A, low, partitionIndex - 1);  // Sort left subarray 
-        randomizedQuickSort(A, partitionIndex + 1, high); // Sort right subarray
+        randomizedQuickSort(A, low, partitionIndex - 1);  
+        randomizedQuickSort(A, partitionIndex + 1, high); 
     }
 }
 
