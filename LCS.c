@@ -45,7 +45,7 @@ int LCS(char X[], char Y[], int m, int n) {
 
 int main() {
     char X[MAX], Y[MAX];
-    printf("Enter first string: ");
+    printf("Enter first string: "); //Max length 100
     scanf("%s", X);
     printf("Enter second string: ");
     scanf("%s", Y);
