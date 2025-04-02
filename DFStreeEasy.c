@@ -48,7 +48,7 @@ int main() {
     addEdge(4, 5);
     
     printf("DFS Traversal:\n");
-    DFS(0); // Start DFS from vertex 0
+    DFS(0); 
     
     printDFSTree();
     
