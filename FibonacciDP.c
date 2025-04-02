@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Function to calculate the n-th Fibonacci number using Dynamic Programming
+
 long long Fibonacci(int n) {
     if (n <= 1)
         return n;
