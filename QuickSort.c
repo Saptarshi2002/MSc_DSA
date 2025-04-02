@@ -1,5 +1,6 @@
 #include <stdio.h>
 
+//Counts number of swaps
 int count =0;
 
 void printArray(int *A, int n)
