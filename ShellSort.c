@@ -1,6 +1,8 @@
 #include <stdio.h>
 
 void bubbleSortGap(int arr[], int n, int gap) {
+
+    //Bubble sort with gap increment
     for (int i = 0; i < n - gap; i++) {
         for (int j = i; j + gap < n; j += gap) {
             if (arr[j] > arr[j + gap]) {
