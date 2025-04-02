@@ -98,6 +98,8 @@ void modify_graph(int d)
 	}
 	
 }
+
+//Display the adjacency matrix
 void display()
 {
 	int i,j;
