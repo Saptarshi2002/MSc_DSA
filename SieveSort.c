@@ -50,6 +50,8 @@ int sieve(int **b, int a[],int y)
 	for(i=0;i<n;i++)
 		printf("%d ",a[i]);
 	printf("\n");
+
+    //Check for sorted
 	for(i=0;i<n-1;i++)
 	{
 		if(a[i]>a[i+1])
