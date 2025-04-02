@@ -48,7 +48,7 @@ int main()
     int arr[] = { 20, 18, 5, 15, 3, 2 };
     int n = 6;
 
-    // Displaying original array
+    
     printf("Original Array : ");
     for (int i = 0; i < n; i++) {
         printf("%d ", arr[i]);
