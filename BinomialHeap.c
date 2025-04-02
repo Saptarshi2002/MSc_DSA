@@ -271,7 +271,7 @@ int main() {
     // Print the heap after extraction
     printf("Heap after Extract-Min:\n");
     printBinomialHeap(heap);
-    
+
     
     return 0;
 }
