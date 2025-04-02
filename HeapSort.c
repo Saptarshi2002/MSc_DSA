@@ -44,7 +44,7 @@ void heapsort(int arr[],int n){
 
 int main()
 {
-    // initializing the array
+
     int arr[] = { 20, 18, 5, 15, 3, 2 };
     int n = 6;
 
