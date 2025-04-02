@@ -62,7 +62,7 @@ int main()
     int A[] = {9, 4, 4, 8, 7, 5, 6};
     int n = 7;
 
-    srand(time(0)); // Seed the random number generator for different runs
+    srand(time(0)); // Seed the random number generator for different runs wrt time
 
     printArray(A, n);
     randomizedQuickSort(A, 0, n - 1);
